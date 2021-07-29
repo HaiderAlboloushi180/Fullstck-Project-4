@@ -1,1 +1,129 @@
-/* أضف قواعد CSS هنا */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header,
+footer {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a {
+  color: rgb(99, 99, 99);
+}
+
+.container {
+  width: 25%;
+  display: flex;
+}
+
+.navbar-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  z-index: 1;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart span {
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.copyright {
+  margin-right: 20%;
+}
+
+.mailing-list {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(235, 235, 235);
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.mailing-list-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 25%;
+  width: 25%;
+}
+
+.signUp {
+  font-size: large;
+}
+
+.emailInput {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15%;
+}
+
+.hero-text {
+  width: 25%;
+  margin-left: 50%;
+  padding: 100px;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+}
+
+.hero-text p {
+  line-height: 25px;
+  font-weight: lighter;
+  color: rgb(99, 99, 99);
+}
+
+.hero-img {
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.logoIMG {
+  z-index: 1;
+}
+
+.button {
+  margin-top: 30px;
+  font-size: medium;
+  padding: 30px 50px 30px 50px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.is-primary {
+  color: white;
+  background-color: rgb(45, 45, 45);
+}
