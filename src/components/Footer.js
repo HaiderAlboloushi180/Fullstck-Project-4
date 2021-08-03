@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="container">
         <MenuBar
           text={["About", "Customer Care", "Instagram"]}
-          path={["about", "customer_care", "instagram"]}
+          path={["", "", ""]}
         />
       </div>
       <p className="copyright">© Pretend Store</p>

@@ -8,10 +8,7 @@ const Header = () => (
     <header>
       <div className="container">
         <Logo />
-        <MenuBar
-          text={["Home", "Collection", "Contact"]}
-          path={["", "collection", "contact"]}
-        />
+        <MenuBar text={["Home", "Collection", "Contact"]} path={["", "", ""]} />
       </div>
       <Cart />
     </header>

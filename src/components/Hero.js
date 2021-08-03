@@ -13,7 +13,7 @@ const Hero = () => (
           repudiandae, id laborum labore sint porro aspernatur nesciunt, veniam
           maxime commodi quibusdam corrupti vitae nemo.
         </p>
-        <Button text="OUR PRODUCTS" classes="is-primary button" />
+        <Button text="OUR PRODUCTS" classes="is-primary" />
       </div>
     </div>
   </>

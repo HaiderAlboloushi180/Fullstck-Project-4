@@ -6,7 +6,7 @@ const MenuBar = ({ text, path }) => {
   const listItems = [];
   for (let i = 0; i < text.length; i++) {
     const listItem = (
-      <li>
+      <li key={i}>
         <NavLink className="navbar-item" exact to={path[i]}>
           {text[i]}
         </NavLink>
