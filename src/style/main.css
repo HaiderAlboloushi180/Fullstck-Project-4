@@ -249,6 +249,46 @@ ul {
   padding: 20px 40px 20px 40px;
 }
 
+.cartPage-container {
+  margin: 4vw;
+}
+
+.cartPage-container p {
+  margin-left: 6vw;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vw;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.cart-item button {
+  margin: 0;
+}
+
+.all-items {
+  background-color: lightgray;
+  border: none;
+}
+
+.space {
+  width: 10%;
+}
+
+.theItem {
+  display: flex;
+  align-items: center;
+}
+
+.theItem img {
+  width: 5vw;
+  margin-right: 2vw;
+}
+
 @media screen and (max-width: 1024px) {
   .hero-img {
     width: 50%;

@@ -20,10 +20,26 @@ class App extends React.Component {
       cart: [...this.state.cart, item],
     });
     alert("Added");
-    console.log(this.state.cart);
   };
 
   // Deleting
+  deleteFromCart = (item) => {
+    let deleting = this.state.cart;
+    const itemIndex = deleting.indexOf(item);
+    if (itemIndex > -1) {
+      deleting.splice(itemIndex, 1);
+    }
+    this.setState({
+      cart: deleting,
+    });
+  };
+
+  // Delete All
+  deleteAll = () => {
+    this.setState({
+      cart: [],
+    });
+  };
 
   render() {
     return (
@@ -55,7 +71,12 @@ class App extends React.Component {
             exact
             path="/cart"
             render={(props) => (
-              <CartPage {...props} cartItems={this.state.cart} />
+              <CartPage
+                {...props}
+                cartItems={this.state.cart}
+                deleteOne={this.deleteFromCart}
+                deleteAll={this.deleteAll}
+              />
             )}
           />
         </>
